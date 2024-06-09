@@ -1,0 +1,4 @@
+- Deadlock: Deadlock happens when two or more processes are each waiting for the other to release a lock, causing them all to get stuck and unable to move forward.
+- Livelock: Livelock occurs when processes keep trying to get a lock but always fail, leading to endless retries and poor performance because they can't progress.
+- Split-Brain Conditions: In distributed systems, a network split can cause isolated segments to think they're the only ones in control. This can result in multiple segments getting the same lock, breaking the rule that only one can have it.
+- Performance Bottlenecks: Overusing or poorly managing distributed locks can slow down the system and make it less scalable. To avoid this, locks should be used efficiently and only held for as short a time as necessary.
